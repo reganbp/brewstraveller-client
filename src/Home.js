@@ -1,4 +1,5 @@
 import React from "react";
+import BrewCard from "./components/brewCard";
 import HomeBanner from "./components/homeBanner";
 import TopNav from "./components/navbar";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <HomeBanner />
       <TopNav />
       <h1>Home</h1>
+      <BrewCard />
     </>
   );
 };
