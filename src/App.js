@@ -15,7 +15,7 @@ function App() {
     //   <Banner />
     //   <Login />
     // </Fragment>
-    <BrowserRouter>
+    <BrowserRouter basename="reganbp.github.io/brewstraveller">
       <Routes>
         <Route path="/" element={<Login />} />
         {/* <Route index element={<Home />} /> */}
