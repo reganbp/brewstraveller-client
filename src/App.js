@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./Login";
 import Home from "./Home";
+import Banner from "./components/banner";
 
 function App() {
   return (
@@ -11,21 +12,21 @@ function App() {
     //     <Banner />
     //   </header>
     // </div>
-    // <Fragment>
-    //   <Banner />
-    //   <Login />
-    // </Fragment>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        {/* <Route index element={<Home />} /> */}
-        <Route path="/home" element={<Home />} />
-        {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
-        {/* </Route> */}
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Banner />
+      <Login />
+    </>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Login />} />
+    //     {/* <Route index element={<Home />} /> */}
+    //     <Route path="/home" element={<Home />} />
+    //     {/* <Route path="blogs" element={<Blogs />} />
+    //       <Route path="contact" element={<Contact />} />
+    //       <Route path="*" element={<NoPage />} /> */}
+    //     {/* </Route> */}
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 
