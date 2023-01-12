@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 import "./login.module.css";
 
-const Login = () => {
+const LoginForm = () => {
   return (
     <Fragment>
       <Container fluid className="login-container">
@@ -25,4 +25,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;
