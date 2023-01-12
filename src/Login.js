@@ -5,7 +5,7 @@ import LoginForm from "./components/loginForm";
 const Login = () => {
   return (
     <>
-      {/* <Banner /> */}
+      <Banner />
       <LoginForm />
     </>
   );
