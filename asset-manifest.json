@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/brewstraveller/static/css/main.4681abbc.css",
-    "main.js": "/brewstraveller/static/js/main.5bd6ec00.js",
+    "main.js": "/brewstraveller/static/js/main.3b169dd1.js",
     "static/js/787.40e1a19f.chunk.js": "/brewstraveller/static/js/787.40e1a19f.chunk.js",
     "static/media/hops-brew.jpg": "/brewstraveller/static/media/hops-brew.77862e60b806f90f36ba.jpg",
     "index.html": "/brewstraveller/index.html",
     "main.4681abbc.css.map": "/brewstraveller/static/css/main.4681abbc.css.map",
-    "main.5bd6ec00.js.map": "/brewstraveller/static/js/main.5bd6ec00.js.map",
+    "main.3b169dd1.js.map": "/brewstraveller/static/js/main.3b169dd1.js.map",
     "787.40e1a19f.chunk.js.map": "/brewstraveller/static/js/787.40e1a19f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4681abbc.css",
-    "static/js/main.5bd6ec00.js"
+    "static/js/main.3b169dd1.js"
   ]
 }
