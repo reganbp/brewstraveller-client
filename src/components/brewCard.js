@@ -2,9 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const BrewCard = ({ key, title, body }) => {
+const BrewCard = ({ title, body }) => {
   return (
-    <ul key={key} style={{ display: "flex" }}>
+    <ul style={{ display: "flex" }}>
       <Card style={{ width: "18rem", flex: "0 0 100%" }}>
         <Card.Img variant="top" />
         <Card.Body>
