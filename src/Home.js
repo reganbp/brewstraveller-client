@@ -4,24 +4,39 @@ import BrewCard from "./components/brewCard";
 import HomeBanner from "./components/homeBanner";
 import TopNav from "./components/navbar";
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
+const baseURL = "https://jsonplaceholder.typicode.com/posts";
 
 const Home = () => {
-  const [post, setPost] = useState("");
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
-      setPost(response.data);
+      setPosts(response.data);
     });
   }, []);
-  console.log(post);
+  console.log(posts);
 
   return (
     <>
       <HomeBanner />
       <TopNav />
-      <h1>Home</h1>
-      <BrewCard title={post.title} body={post.body} />
+      <h1> Home </h1>{" "}
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+        }}
+      >
+        {" "}
+        {posts.map((post) => (
+          // <ul key={post.id}>
+          //   <BrewCard title={post.title} body={post.body} />{" "}
+          // </ul>
+          <BrewCard key={post.id} title={post.title} body={post.body} />
+        ))}{" "}
+        {/* <BrewCard title={post.title} body={post.body} />{" "} */}{" "}
+      </div>{" "}
     </>
   );
 };
