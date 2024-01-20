@@ -10,11 +10,11 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get(baseURL).then((response) => {
+    axios.get(baseURL, { params: { _limit: 12 } }).then((response) => {
       setPosts(response.data);
     });
   }, []);
-  console.log(posts);
+  // console.log(posts.slice(0, 5));
 
   return (
     <>
